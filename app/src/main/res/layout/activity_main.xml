@@ -1,18 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
     android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="50dp"
+        android:layout_gravity="center"
 
-</android.support.constraint.ConstraintLayout>
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:text="REGISTER"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_weight="10"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="left"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Username:What's my name?" />
+
+        <Button
+            android:id="@+id/v1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:text="validate"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+
+
+            android:layout_weight="3.5"
+            android:backgroundTint="@color/colorgreen">
+
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="20dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:hint="Male"
+                tools:text="Male" />
+
+            <TextView
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:layout_weight="2"
+                android:gravity="right"
+
+                android:text="And now you"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:hint="Female"
+                tools:text="Female" />
+
+            <TextView
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+
+                android:layout_weight="2"
+                android:gravity="left"
+
+                android:text=" accept us!!!"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/v2"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:text="validate"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+
+
+            android:layout_weight="3.5"
+            android:backgroundTint="@color/colorgreen" >
+
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_weight="10"
+            android:inputType="numberDecimal"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="left"
+            android:gravity="center"
+
+
+            android:layout_width="0dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:hint="Age:Not greater than sachin?" />
+
+        <Button
+
+            android:layout_weight="3.5"
+            android:id="@+id/v3"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/colorgreen"
+            android:text="validate"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_weight="10"
+            android:inputType="date"
+
+
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="left"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="What date could have
+ been a birthday format:
+    day/month:00/00 " />
+
+        <Button
+
+            android:id="@+id/v4"
+            android:layout_weight="3.5"
+            android:text="validate"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+
+            android:textSize="12dp"
+
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/colorgreen"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_weight="10"
+            android:layout_gravity="left"
+
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No.:Gi'mme that number" />
+
+        <Button
+            android:id="@+id/v5"
+            android:layout_gravity="center"
+            android:layout_weight="3.5"
+            android:text="validate"
+            android:textColor="#fff"
+            android:textSize="12dp"
+
+
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/colorgreen"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_weight="10"
+            android:inputType="number"
+
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="4-digit pin" />
+
+        <Button
+            android:id="@+id/v6"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="validate"
+            android:textColor="#fff"
+            android:textSize="10dp"
+
+
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/colorgreen"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>
